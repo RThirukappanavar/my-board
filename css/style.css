@@ -204,10 +204,18 @@ p {
 }
 .work-info h4 {
     font-size: 1.2em;
-    background: darkcyan;
+    background: white;
     display: inline-block;
     padding: .6em 1.2em;
-    color: #fff;
+    color: rgb(10, 10, 10);
+	position:relative;
+}
+.work-info.edu h4 {
+    font-size: 1.2em;
+    background: black;
+    display: inline-block;
+    padding: .6em 1.2em;
+    color: white;
 	position:relative;
 }
 .work-info h4:before {
@@ -219,13 +227,24 @@ p {
     right: -14px;
     border-style: solid;
     border-width: 10px 0 10px 16px;
-    border-color: transparent transparent transparent rgb(0, 139, 139);
+    border-color: transparent transparent transparent  white;
+}
+.work-info.edu h4:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    top: 9px;
+    right: -14px;
+    border-style: solid;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent  black;
 }
 .work-info h5 {
     font-size: 1.3em;
-    color: #F7E612;
+    color:#F17825;
     margin-bottom: .5em;
-    border: 1px solid #F7E612;
+    border: 1px solid #F17825;
     display: inline-block;
     padding: 9px 1.2em;
 }
@@ -272,7 +291,7 @@ p {
     margin-top: 0.8em;
 }
 .work-info:hover span.glyphicon {
-    color: #F7E612;
+    color: #0e0d0d;
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
     transform: scale(1.2);
@@ -298,10 +317,10 @@ p {
 .progress {
     height: 10px;
     margin-bottom: 2.2em;
-    background-color: #2F2C06;
+    background-color: #321909;
 }
 .progress-bar {
-    background-color: #766E04;
+    background-color: #F17825;
 }
 .bar-grids h6 {
     font-size: 1.1em;
@@ -475,7 +494,7 @@ p {
 	font-size: 1.1em;
 }
 .footer p a{
-    color: #F7E612;
+    color:#F17825;
 }
 .footer p a:hover{
     color: #fff;

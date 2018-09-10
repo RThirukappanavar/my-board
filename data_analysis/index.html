@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-selection/1.1.0/d3-selection.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-request/1.0.6/d3-request.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-dispatch/1.0.3/d3-dispatch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-collection/1.0.4/d3-collection.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-array/1.2.1/d3-array.min.js"></script>
+<script src="main.js"></script>
+<style>
+    .arc text {
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+
+    .arc path {
+        stroke: #fff;
+    }
+
+    .title {
+        fill: teal;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div id='my_file_output'></div>
+    <input type="file" id="my_file_input" />
+<div>
+    <svg id='gender_graph_svg' width="250" height="200"></svg>
+    <svg id='senior_citizen_svg' width="250" height="200"></svg>
+    <svg id='show_Partner_svg' width="250" height="200"></svg>
+    <svg id='Phone_Service_svg' width="250" height="200"></svg>
+    <svg id='Multiple_Lines_svg' width="250" height="200"></svg>
+    <svg id='Internet_Service_svg' width="250" height="200"></svg>
+    <svg id='PaymentMethod_svg' width="250" height="200"></svg>
+    <svg id='Churn_PaymentMethod_gender_sunBurst_svg'></svg>
+
+</div>
+<div>
+    <button id="gender_graph" >show gender graph</button>
+    <button id="senior_citizen" >Senior Citizen graph</button>
+    <button id="show_Partner_Button" >show_Partner_Button</button>
+    <button id="Phone_Service_Button" >Phone_Service_Button</button>
+    <button id="Multiple_Lines_Button" >Multiple_Lines_Button</button>
+    <button id="Internet_Service_Button" >Multiple_Lines_Button</button>
+    <button id="PaymentMethod_Button" >PaymentMethod_Button</button>
+    <button id="Churn_PaymentMethod_gender_sunBurst_Button" >Churn_PaymentMethod_gender_sunBurst_Button</button>
+    
+</div>
+
+</body>
+
+
+
+
